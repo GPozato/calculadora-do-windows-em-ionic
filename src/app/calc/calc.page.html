@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <div class="center">
+    <ion-card>
+      <ion-item lines="full">
+        <ion-label position="floating">Primeiro valor</ion-label>
+        <ion-input ></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Segundo valor</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="dark"> + </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="dark"> - </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="dark"> * </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="dark"> / </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" fill="outline" color="dark">
+            MAIOR > </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" fill="outline" color="dark">
+            < MENOR </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="full">
+        <ion-label><strong>Resultado:</strong></ion-label>
+        <ion-label slot="end">0</ion-label>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label slot="start"><strong>Conta:</strong></ion-label>
+        <ion-label>Soma</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
